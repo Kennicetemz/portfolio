@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Developer Resume - Adekola Folarin John</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #141e30, #243b55);
+            color: #f0f0f0;
+            overflow-x: hidden;
+        }
+        .container {
+            width: 90%;
+            margin: auto;
+            padding: 20px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+            background: rgba(20, 30, 48, 0.9);
+            border-radius: 15px;
+            overflow: hidden;
+        }
+        h1, h2 {
+            text-align: center;
+            color: #00aaff;
+            animation: fadeIn 1.5s ease;
+        }
+        .profile-picture {
+            display: block;
+            margin: 20px auto;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            border: 4px solid #00aaff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+        .section {
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s, opacity 0.3s;
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        .section.active {
+            opacity: 1;
+            transform: translateY(0);
+            transition: opacity 0.5s, transform 0.5s;
+        }
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-around;
+        }
+        .project {
+            flex: 1 1 calc(45% - 10px);
+            background: rgba(255, 255, 255, 0.2);
+            padding: 15px;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+        .project:hover {
+            transform: scale(1.05);
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        a {
+            color: #1ed760;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .icon {
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @media (max-width: 768px) {
+            .projects {
+                flex-direction: column;
+            }
+            .project {
+                flex: 1 1 100%;
+            }
+        }
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #333;
+            color: white;
+            padding: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: none;
+        }
+        .project:hover {
+            transform: translateY(-5px);
+            transition: transform 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Frontend Developer Resume</h1>
+        <img src="./image/Untitled-1.png" alt="Ogah Kennice" class="profile-picture">
+        <h2>Ogah Kennice Eshiovaze</h2>
+
+        <div class="section">
+            <h3><i class="fas fa-address-book icon"></i>Contact Information</h3>
+            <p>Email: <a href="mailto:kennicetemi4@gmail.com">kennicetemi4@gmail.com</a></p>
+            <p>Phone: 09115048373</p>
+        </div>
+
+        <div class="section">
+            <h3><i class="fas fa-user icon"></i>Professional Summary</h3>
+            <p>Motivated and detail-oriented Frontend Developer with 5 months of experience. Proficient in HTML, CSS, JavaScript, React, Python, and SQL. Skilled in using Tailwind CSS and enthusiastic about creating responsive webpages.</p>
+        </div>
+
+        <div class="section">
+            <h3><i class="fas fa-tools icon"></i>Skills</h3>
+            <ul>
+                <li><i class="fas fa-check-circle icon"></i>React.js, JavaScript (ES6+), Python, SQL</li>
+                <li><i class="fas fa-check-circle icon"></i>Responsive Design & Cross-Browser Compatibility</li>
+                <li><i class="fas fa-check-circle icon"></i>Proficient in Tailwind CSS</li>
+                <li><i class="fas fa-check-circle icon"></i>Version Control with Git</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3><i class="fas fa-briefcase icon"></i>Experience</h3>
+            <p><strong>Frontend Developer Intern</strong> at Tech Solutions</p>
+            <p>July 2024 - Present</p>
+            <ul>
+                <li><i class="fas fa-check-circle icon"></i>Developed and optimized frontend components using React.js and JavaScript.</li>
+                <li><i class="fas fa-check-circle icon"></i>Enhanced user experience through responsive design and intuitive UI elements.</li>
+                <li><i class="fas fa-check-circle icon"></i>Collaborated with designers and backend developers for seamless integration.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3><i class="fas fa-project-diagram icon"></i>Projects</h3>
+            <div class="projects">
+                <div class="project">
+                    <h4><i class="fas fa-globe icon"></i>E-Commerce Website</h4>
+                    <p>An online store with a responsive design, user-friendly interface, and secure payment system.</p>
+                    <a href="#">View Project</a>
+                </div>
+                <div class="project">
+                    <h4><i class="fas fa-calculator icon"></i>Scientific Calculator</h4>
+                    <p>A feature-rich calculator built using JavaScript and responsive UI elements.</p>
+                    <a href="#">View Project</a>
+                </div>
+                <div class="project">
+                    <h4><i class="fas fa-gamepad icon"></i>Games Collection</h4>
+                    <p>Interactive browser games showcasing dynamic graphics and user engagement.</p>
+                    <a href="#">View Project</a>
+                </div>
+                <div class="project">
+                    <h4><i class="fas fa-tasks icon"></i>To-Do List Application</h4>
+                    <p>A task management app with real-time updates and local storage integration.</p>
+                    <a href="#">View Project</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3><i class="fas fa-graduation-cap icon"></i>Education</h3>
+            <p></p>
+            <p>Attends Babcock University</p>
+        </div>
+    </div>
+    <button class="back-to-top" id="backToTop">↑</button>
+
+
+    <script>
+        // Animation to reveal sections on scroll
+        const sections = document.querySelectorAll('.section');
+        window.addEventListener('scroll', () => {
+            const scrollPos = window.innerHeight * 0.8;
+            sections.forEach(section => {
+                const sectionTop = section.getBoundingClientRect().top;
+                if (sectionTop < scrollPos) {
+                    section.classList.add('active');
+                }
+            });
+        });
+            // Typing animation
+            function typeWriter(text, element, speed = 100) {
+                let i = 0;
+                function type() {
+                    if (i < text.length) {
+                        element.innerHTML += text.charAt(i);
+                        i++;
+                        setTimeout(type, speed);
+                    }
+                }
+                type();
+            }
+    
+            // Initialize typing animation
+            document.addEventListener('DOMContentLoaded', () => {
+                const heading = document.querySelector('h1');
+                const text = heading.innerHTML;
+                heading.innerHTML = '';
+                typeWriter(text, heading);
+            });
+       // Back to top button
+       const backToTop = document.getElementById('backToTop');
+       window.addEventListener('scroll', () => {
+           if (window.scrollY > 300) {
+               backToTop.style.display = 'block';
+           } else {
+               backToTop.style.display = 'none';
+           }
+       });
+
+       backToTop.addEventListener('click', () => {
+           window.scrollTo({
+               top: 0,
+               behavior: 'smooth'
+           });
+       });
+          // Project hover animation
+          const projects = document.querySelectorAll('.project');
+          projects.forEach(project => {
+              project.addEventListener('mouseenter', () => {
+                  project.style.transform = 'translateY(-5px)';
+              });
+              project.addEventListener('mouseleave', () => {
+                  project.style.transform = 'translateY(0)';
+              });
+          });
+  
+    </script>
+</body>
+</html>
